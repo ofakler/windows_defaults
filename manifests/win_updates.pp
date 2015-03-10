@@ -8,14 +8,14 @@ windows_updates::list {'All Windows Updates':
   ensure => 'present',
   dry_run => 'C:\\des_wuerd_er_installen.txt',
   name => '*'}
-notify {"Updates wuerden nicht laufen":}
+  notify {"Updates wuerden nicht laufen":}
 }
 else {
 notify {"Updates wuerden laufen":}
 windows_updates::list {'All Windows Updates':
   ensure => 'present',
-  name => '*'},
-  notify => Reboot['after_run'],
+  name => '*',
+  notify => Reboot['after_run']}
 }
 reboot {'after_run':
         when => pending,
