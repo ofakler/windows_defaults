@@ -14,7 +14,7 @@ else {
 notify {"Updates wuerden laufen":}
 windows_updates::list {'All Windows Updates':
   ensure => 'present',
-  name => '*'}
+  name => '*'},
   notify => Reboot['after_run'],
 }
 reboot {'after_run':
