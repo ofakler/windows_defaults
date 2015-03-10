@@ -1,0 +1,14 @@
+{
+  "name": "ofakler-windows_defaults",
+  "version": "0.1.0",
+  "author": "Oliver Fakler",
+  "summary": "Default Windows Settings",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
