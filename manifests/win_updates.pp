@@ -15,6 +15,10 @@ notify {"Updates wuerden laufen":}
 windows_updates::list {'All Windows Updates':
   ensure => 'present',
   name => '*'}
+  notify => Reboot['after_run'],
 }
+reboot {'after_run':
+        when => pending,
+        }
 }
 
