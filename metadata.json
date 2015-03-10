@@ -3,12 +3,28 @@
   "version": "0.1.0",
   "author": "Oliver Fakler",
   "summary": "Default Windows Settings",
-  "license": "Apache 2.0",
+  "license": "Geh weg!",
   "source": "",
   "project_page": null,
   "issues_url": null,
+    "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2003",
+        "Server 2003 R2",
+        "Server 2008",
+        "Server 2008 R2",
+        "Server 2012",
+        "Server 2012 R2",
+        "7",
+        "8"
+      ]
+    }
+  ],
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-stdlib","version_requirement":">= 3.0.0"},
+    {"name":"noma4i-windows_updates","version_requirement":">= 0.2.0"}
   ]
 }
 
